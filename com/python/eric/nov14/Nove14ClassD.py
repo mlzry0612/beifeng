@@ -1,7 +1,12 @@
+from Nove14ClassC import Son
+
 class people:
     #
     # 这个类是一个人类,实例属性包含name,age,sex
     eat = '喜欢吃饭喜欢睡觉'
+    _eat = 'sdfsdff'  #proteted
+    __eat = 'ssss'  #private
+
 
     # self是类的实例
 
@@ -28,6 +33,8 @@ class people:
 
 
 # person1是类的实例化对象
+#__name是 model 或 class
+#__main 是文件名
 if __name__ == '__main__':
     person1 = people('成乔恩', 34, '女')
     people.static1()
@@ -56,5 +63,10 @@ setattr(people, 'professional', '明星')
 # print(people.__doc__)
 # print(person1.__doc__)
 # 内置内属性 __name__ 类
-# print(people.__name__)
+print(people.__name__)
 # print(person1.__name__) 会报错
+
+
+s = Son()
+s.teach()
+s.teach1()
